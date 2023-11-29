@@ -1,0 +1,21 @@
+# Enunciado del challenge 04 - Hackers dañan sistema de archivos
+En un mundo donde la información es poder, un hacker conocido como  <span style="color: #fef9c3">**Savipo Yatar**</span> descubre una serie de archivos en un servidor altamente protegido.
+
+Estos archivos contienen secretos que podrían cambiar el curso de la historia. Pero hay un problema: algunos de los archivos son falsos, diseñados para engañar a los intrusos. <span style="color: #fef9c3">**Savipo Yatar**</span>  debe determinar rápidamente cuáles archivos son reales y cuáles son falsos.
+
+Cada archivo tiene un nombre con dos partes, separadas por un guion (-). La primera parte es una cadena alfanumérica y la segunda es unchecksum, que es una cadena formada por los caracteres que sólo aparecen una vez en la primera parte y en el orden en que aparecen.
+
+Escribe un programa que determine si un archivo es real o falso basado en estas reglas.
+
+## Ejemplos
+
+1. > Nombre del archivo: xyzz33-xy <br>
+Resultado: ✅ Real (El checksum es válido)
+
+1. > Nombre del archivo: abcca1-ab1 <br>
+Resultado: ❌ Falso (El checksum debería ser b1, es incorrecto)
+
+1. > Nombre del archivo: abbc11-ca <br>
+Resultado: ❌ Falso (El checksum debería ser ac, el orden es incorrecto)
+
+Cada línea indica el nombre del archivo y su correspondiente checksum, separados por un guion (-).
